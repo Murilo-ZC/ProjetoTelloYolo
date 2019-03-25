@@ -15,7 +15,7 @@ with open('yolov3.txt', 'r') as f:
 COLORS = np.random.uniform(0, 255, size=(len(classes), 3))
 
 # read pre-trained model and config file
-net = cv2.dnn.readNet('yolov3.weights', 'yolov3.cfg')
+net = cv2.dnn.readNet('yolov3-tiny.weights', 'yolov3-tiny.cfg')
 
 #Funcoes para manipular os dados
 # function to get the output layer names
